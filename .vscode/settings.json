@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Bracket pair colorization
+  "editor.bracketPairColorization.enabled": true,
+
+  // Show the colored guide lines connecting matching brackets
+  // Options: true | "active" | false
+  // - true     → always show all guides
+  // - "active" → only highlight the guide for the bracket pair your cursor is inside
+  // - false    → hide all guides
+  "editor.guides.bracketPairs": "active",
+
+  // Optionally also colorize the indent guides to match bracket colors
+  "editor.guides.bracketPairsHorizontal": "active",
+
+  // Highlight the active indent guide
+  "editor.guides.highlightActiveIndentation": true
+}
