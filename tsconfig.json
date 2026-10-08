@@ -7,7 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "node16",
     "target": "esnext",
     "types": [],
     // For nodejs:
@@ -40,5 +40,9 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+    "moduleResolution": "node16",
+    "outDir": "build"
+  },
+  "exclude": ["node_modules/"],
+  "include": ["src/**/*.ts"]
 }
