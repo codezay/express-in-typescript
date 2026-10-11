@@ -4,14 +4,18 @@
   "description": "api basics in typescript using express",
   "license": "ISC",
   "author": "codezay",
-  "type": "commonjs",
+  "type": "module",
   "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14",
-    "ts-node": "^10.9.2",
-    "typescript": "^7.0.2"
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1"
   }
 }

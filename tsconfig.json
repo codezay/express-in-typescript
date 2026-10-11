@@ -8,12 +8,18 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "node16",
-    "target": "esnext",
+    "target": "es6",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
+
+    //
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
 
     // Other Outputs
     "sourceMap": true,
@@ -41,7 +47,12 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "moduleResolution": "node16",
-    "outDir": "build"
+    "outDir": "build",
+
+    //
+    "noEmit": true,
+    // "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true
   },
   "exclude": ["node_modules/"],
   "include": ["src/**/*.ts"]
