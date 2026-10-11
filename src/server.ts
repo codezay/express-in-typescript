@@ -35,6 +35,11 @@ export const Main = () => {
     });
   });
 
+  //  browser auto-requests favicons. this suppress it.
+  application.get('/favicon.ico', (req: Request, res: Response, next: NextFunction) => {
+    return res.status(204).end();
+  });
+
   application.use(routeNotFound);
 
   httpServer = http.createServer(application);

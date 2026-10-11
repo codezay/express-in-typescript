@@ -5,5 +5,5 @@ export function routeNotFound(req: Request, res: Response, next: NextFunction) {
 
   logging.error(error);
 
-  return res.status(400).json({ error });
+  return res.status(400).json({ error: error.message });
 }
