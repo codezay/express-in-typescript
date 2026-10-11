@@ -1,4 +1,4 @@
-import { TEST } from './config.ts';
+import { TEST } from './config.js';
 
 const colours = {
   reset: '\x1b[0m',

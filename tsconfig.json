@@ -47,12 +47,11 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "moduleResolution": "node16",
-    "outDir": "build",
+    "outDir": "build"
 
-    //
-    "noEmit": true,
-    // "emitDeclarationOnly": true,
-    "allowImportingTsExtensions": true
+    // this works but building the app does not
+    // "noEmit": true,
+    // "allowImportingTsExtensions": true
   },
   "exclude": ["node_modules/"],
   "include": ["src/**/*.ts"]
